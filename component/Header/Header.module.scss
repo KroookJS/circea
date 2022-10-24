@@ -1,0 +1,56 @@
+.header {
+  width: 100%;
+  max-width: 1920px;
+  height: 100px;
+  background-color: black;
+  color: #fff;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  @media (max-width: 420px) {
+    padding: 0 22px;
+    height: 60px;
+    font-size: 16px;
+    display: block;
+    text-align: left;
+  }
+}
+.wrraper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoBlock {
+  margin-top: 10px;
+  width: 170px;
+  height: 70px;
+  @media (max-width: 420px) {
+    height: 38px;
+    width: 140px;
+  }
+}
+.numberBlock {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  @media (max-width: 420px) {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+  @media (max-width: 420px) {
+    display: block;
+    width: 24px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,32 @@
+.wrraper {
+  margin-top: 200px;
+  max-width: 1585px;
+  /* background-color: aqua; */
+  position: relative;
+  @media (max-width: 420px) {
+    margin-top: 70px;
+  }
+}
+.wrraperMobile {
+  @media (max-width: 420px) {
+    margin-top: 135px;
+  }
+}
+.titleBlock {
+  @media (max-width: 420px) {
+    width: 300px;
+  }
+}
+
+.blockAny {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.path {
+  stroke: green;
+  stroke-width: 6;
+  stroke-dasharray: 6488;
+  stroke-dashoffset: 6488;
+  animation: draw 10s linear forwards;
+}

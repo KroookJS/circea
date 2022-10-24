@@ -1,5 +1,23 @@
 .container {
-  padding: 0 2rem;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.blockAny {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.path {
+  stroke: green;
+  stroke-width: 6;
+  stroke-dasharray: 6488;
+  stroke-dashoffset: 6488;
+  animation: draw 10s linear forwards;
+}
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 .main {
@@ -106,6 +124,53 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.test__any {
+  transform: rotate3d(30deg);
+}
+.wrapperMyTest {
+  background: #eaeaea;
+}
+
+.wrraperScrol {
+  background-color: #a29a9a;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 80vh;
+  overflow: hidden;
+}
+
+.cardScroll {
+  background-color: #fff;
+  min-width: 100%;
+  min-height: 300px;
+
+  display: flex;
+  overflow-x: auto;
+}
+
+.cardScroll::-webkit-scrollbar {
+  display: none;
+}
+.cardScroll::-webkit-scrollbar-track {
+  background: "#F5F5F7";
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cardScroll::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
+.cardContent {
+  background-color: #e74c3c;
+  min-width: 200px;
+  margin: 5px;
 }
 
 @media (max-width: 600px) {
